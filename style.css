@@ -60,6 +60,7 @@
     }
   .side {
     grid-area: side;
+    background-color: #6C757D
     }
   
 @media (max-width: 900px) and (min-width: 600px) {
