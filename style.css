@@ -1,21 +1,51 @@
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+   height:100%;
+}
+.main-head {
+   background-color: #1A1C22;
+   height: 100px;
+   width: 100%;
+   margin-bottom: 15px;
+}
+
+.content1 {
+  background-color: #343A40;
+  grid-area: content1;
   }
-  html, body {
-     height:100%;
+.content2 {
+  background-color: #343A40;
+  grid-area: content2;
   }
-  .main-head {
-     background-color: #1A1C22;
-     height: 100px;
-     width: 100%;
-     margin-bottom: 15px;
+.content3 {
+  background-color: #343A40;
+  grid-area: content3;
   }
+.content4 {
+  background-color: #343A40;
+  grid-area: content4;
+  }
+.content5 {
+  background-color: #343A40;
+  grid-area: content5;
+  }
+.content6 {
+  background-color: #343A40;
+  grid-area: content6;
+  }
+.side {
+  background-color: #6C757D;
+  grid-area: side;
+  }
+@media screen and (max-width: 600px) {
   .wrapper {
     margin: 0 auto;
-    min-height:calc(100% - 230px);
+    min-height:calc(100% - 100px);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50% 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -30,90 +60,64 @@
     "content5"
     "content6"
     }
+  }
   .main-footer {
      background-color: #1A1C22;
      height: 100px;
      width: 100%;
      margin-top: 15px;
-     
-      }
-  .content {
-    background-color: #343A40;
-  }
-  .content1 {
-    grid-area: content1;
-    }
-  .content2 {
-    grid-area: content2;
-    }
-  .content3 {
-    grid-area: content3;
-    }
-  .content4 {
-    grid-area: content4;
-    }
-  .content5 {
-    grid-area: content5;
-    }
-  .content6 {
-    grid-area: content6;
-    }
-  .side {
-    grid-area: side;
-    background-color: #6C757D
-    }
-  
-@media (max-width: 900px) and (min-width: 600px) {
-    
-    .wrapper {
-      margin: 0 auto;
-      min-height:calc(100% - 230px);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 1fr 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    grid-template-areas: 
-        "side side"
-        "content1 content2"
-        "content3 content4"
-        "content5 content6";
-    }
-   
 }
-@media (max-width: 1200px) and (min-width: 900px) {
-  .side {
-    min-height: 400px;
-  }
-.wrapper {
-  margin: 0 auto;
-  min-height:calc(100% - 230px);
+@media (min-width: 600px) and (max-width: 900px) {
+  
+  .wrapper {
+    margin: 0 auto;
+    min-height:calc(100% - 100px);
   display: grid;
-  grid-template-columns: 400px 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50% 1fr 1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
   grid-template-areas: 
-  "side content1 content2"
-  "side content3 content4"
-  "side content5 content6";
-    }
+      "side side"
+      "content1 content2"
+      "content3 content4"
+      "content5 content6";
+  }
+ 
+}
+@media (min-width: 900px) and (max-width: 1200px)  {
+.side {
+  min-height: 400px;
+}
+.wrapper {
+margin: 0 auto;
+min-height:calc(100% - 100px);
+display: grid;
+grid-template-columns: 400px 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+grid-template-areas: 
+"side content1 content2"
+"side content3 content4"
+"side content5 content6";
+  }
 }
 @media (min-width: 1200px) {
- 
-  .side {
-    min-height: 400px;
-  }
-  .wrapper {
-    margin: 0 auto;
-    min-height:calc(100% - 230px);
-    display: grid;
-    grid-template-columns: 400px 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-    grid-template-areas: 
-    "side content1 content2 content3"
-    "side content4 content5 content6";
-      }
+
+.side {
+  min-height: 400px;
+}
+.wrapper {
+  margin: 0 auto;
+  min-height:calc(100% - 100px);
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-areas: 
+  "side content1 content2 content3"
+  "side content4 content5 content6";
+    }
 }
