@@ -1,3 +1,3 @@
-Ćwiczenia oraz zabawa z layotem przy pomocy CSS GRID + RWD
+Stworzenie responsywnego layoutu przy pomocy CSS GRID.
 
-https://tommcode.github.io/Zadanie1/
+https://tommcode.github.io/gridLayout/
